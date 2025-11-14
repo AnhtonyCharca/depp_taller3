@@ -1,0 +1,36 @@
+flowchart TD
+
+    %% ================= NIVEL 0 =================
+    A[Ubicación geográfica de las instituciones educativas]
+
+    %% ================= NIVEL 1 =================
+    A --> B(Impacto en los logros de aprendizaje)
+
+    %% ================= NIVEL 2 =================
+    B --> C(Brecha urbano–rural)
+    B --> D(Mecanismos explicativos)
+
+    %% ================= NIVEL 3 =================
+    %% Brecha urbano-rural
+    C --> C1(Resultados más bajos en zonas rurales)
+    C --> C2(Resultados más altos en zonas urbanas)
+
+    %% Mecanismos explicativos
+    D --> D1(Condiciones socioeconómicas)
+    D --> D2(Recursos y organización escolar)
+    D --> D3(Factores lingüísticos y culturales)
+
+    %% ================= NIVEL 4 =================
+    %% Condiciones socioeconómicas
+    D1 --> E1(Pobreza, trabajo infantil, menor capital educativo)
+    E1 --> F1(Menor tiempo y apoyo para el estudio)
+
+    %% Recursos escolares
+    D2 --> E2(Infraestructura y equipamiento deficientes)
+    D2 --> E3(Escuelas multigrado y rotación docente)
+    D2 --> E4(Mejores servicios y docentes en zonas urbanas)
+
+    %% Factores lingüísticos
+    D3 --> E5(Diferencia entre lengua materna y de instrucción)
+    E5 --> F2(Ralentización del aprendizaje)
+
