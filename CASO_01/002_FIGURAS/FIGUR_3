@@ -1,29 +1,31 @@
-mindmap
-  root((Ubicación geográfica de las instituciones educativas y logros de aprendizaje))
+flowchart TD
+    A["Ubicación geográfica y logros de aprendizaje"]:::root
 
-    "Contexto territorial (urbano / rural)"
-      "Accesibilidad física a la escuela"
-      "Disponibilidad de servicios educativos y sociales"
-      "Características del entorno residencial (seguridad, ruido, espacios de estudio)"
+    A --> B["Contexto territorial (Urbano / Rural)"]
+    A --> C["Condiciones socioeconómicas"]
+    A --> D["Recursos y organización escolar"]
+    A --> E["Factores lingüísticos y culturales"]
+    A --> F["Evidencia empírica brechas urbano–rurales"]
 
-    "Condiciones socioeconómicas del alumnado"
-      "Pobreza de ingresos y privaciones materiales"
-      "Capital educativo familiar (escolaridad de padres, recursos culturales)"
-      "Carga laboral y trabajo infantil"
+    B --> B1["Accesibilidad y distancia a la escuela"]
+    B --> B2["Servicios educativos y sociales"]
+    B --> B3["Entorno residencial"]
 
-    "Recursos y organización escolar"
-      "Infraestructura y equipamiento (aulas, TIC, servicios básicos)"
-      "Tamaño de escuela y grado de multigrado"
-      "Dotación, estabilidad y formación docente"
-      "Tiempo efectivo de enseñanza-aprendizaje"
+    C --> C1["Pobreza y privaciones"]
+    C --> C2["Capital educativo familiar"]
+    C --> C3["Trabajo infantil"]
 
-    "Factores lingüísticos y culturales"
-      "Desajuste entre lengua materna y lengua de instrucción"
-      "Pertinencia intercultural del currículo"
-      "Prácticas pedagógicas sensibles al contexto"
+    D --> D1["Infraestructura y equipamiento"]
+    D --> D2["Escuelas multigrado"]
+    D --> D3["Estabilidad y formación docente"]
+    D --> D4["Tiempo efectivo de aprendizaje"]
 
-    "Evidencia empírica sobre brechas urbano–rurales"
-      "Perú: menores logros rurales en ECE en lectura y matemática"
-      "Rojas Apaza et al. (2024): brecha ≈ 63 puntos en matemática a favor de escuelas urbanas"
-      "UNESCO TERCE/ERCE: estudiantes rurales con 0,3–0,5 DE menos en competencias básicas"
-      "Implicancia: el territorio actúa como factor estructural de desigualdad educativa"
+    E --> E1["Lengua materna vs. lengua de instrucción"]
+    E --> E2["Pertinencia cultural del currículo"]
+    E --> E3["Prácticas pedagógicas adaptadas"]
+
+    F --> F1["Perú: brechas en ECE lectura y matemática"]
+    F --> F2["Rojas Apaza et al. (2024): ~63 pts matemática urbano > rural"]
+    F --> F3["UNESCO ERCE: 0.3–0.5 DE menos rendimiento rural"]
+
+    classDef root fill:#f7eab7,stroke:#333,stroke-width:2px;
