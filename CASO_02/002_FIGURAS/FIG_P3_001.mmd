@@ -1,0 +1,33 @@
+flowchart TD
+
+    A[Planificacion geografica del territorio]
+
+    %% NIVEL 1
+    A --> B(Asignacion de recursos)
+    A --> C(Identificacion de brechas)
+    A --> D(Planificacion de infraestructura)
+    A --> E(Distribucion del personal medico)
+
+    %% NIVEL 2 - Brechas
+    C --> C1(Zonas de baja cobertura)
+    C --> C2(Alta dispersion poblacional)
+    C --> C3(Barreras de acceso)
+
+    %% NIVEL 2 - Recursos
+    B --> B1(Priorizar inversion)
+    B --> B2(Asignar presupuesto segun evidencia)
+
+    %% NIVEL 2 - Infraestructura
+    D --> D1(Ubicacion de nuevos establecimientos)
+    D --> D2(Ampliacion de infraestructura existente)
+    D --> D3(Mejora de rutas y tiempos de respuesta)
+
+    %% NIVEL 2 - Personal
+    E --> E1(Detectar deficit de personal)
+    E --> E2(Incentivos diferenciados)
+    E --> E3(Fortalecer redes y microredes)
+
+    %% RESULTADO FINAL
+    A --> F(Resultado final)
+    F --> G(Decisiones basadas en informacion geografica)
+    G --> H(Mayor equidad territorial en salud)
